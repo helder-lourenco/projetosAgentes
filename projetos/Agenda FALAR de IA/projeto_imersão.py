@@ -16,7 +16,7 @@ from google.adk.agents import Agent
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.adk.tools import google_search # Importa a ferramenta google_search
-# REMOVIDO: from google.generativeai import types # Esta linha foi removida e não é mais necessária
+from google.generativeai import types # CORRIGIDO: Re-importa 'types' de google.generativeai
 from datetime import date
 import textwrap
 
@@ -80,8 +80,8 @@ def call_agent(agent: Agent, message_text: str) -> str:
             raise ValueError(f"Falha ao criar ou recuperar a sessão: {session_id}")
 
     runner = Runner(agent=agent, app_name=agent.name, session_service=session_service)
-    # CORRIGIDO: Acessa Content e Part diretamente do módulo genai (google.generativeai)
-    content = genai.Content(role="user", parts=[genai.Part(text=message_text)])
+    # CORRIGIDO: Acessa Content e Part através de genai.types
+    content = genai.types.Content(role="user", parts=[genai.types.Part(text=message_text)])
 
     final_response = ""
     for event in runner.run(user_id="user1", session_id=session_id, new_message=content):
