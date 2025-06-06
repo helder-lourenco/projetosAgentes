@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+openai
+duckduckgo-search
+ipywidgets
+google-genai
+google-adk
+python-dotenv  # We'll add this for .env file support

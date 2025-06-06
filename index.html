@@ -3,25 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meus Projetos no GitHub Pages</title>
+    <title>DSMovie Catalog</title>
+    <link rel="icon" type="image/png" href="brain-icon.png" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Catálogo de Projetos</h1>
-      <p>Acesse meus projetos hospedados no GitHub Pages.</p>
+      <div class="container">
+        <div class="logo">
+          <img src=./assets/logo.jpg alt="Logo" />
+          <h1>PROJETO AGENTES DE IA</h1>
+        </div>
+        <nav>
+          <a
+            href="https://www.linkedin.com/in/helder-lourenco-bi/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="project-list">
-        <h2>Projetos Disponíveis</h2>
-        <div id="projects-container" class="grid-container"></div>
-      </section>
+      <div class="container">
+        <section class="catalog">
+          <div class="pagination">
+            <span>1 de 4</span>
+            <div class="pagination-buttons">
+              <button><i class="fas fa-chevron-left"></i></button>
+              <button><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+
+          <div id="item-grid" class="grid-container"></div>
+
+          <div class="pagination bottom-pagination">
+            <span>1 de 4</span>
+            <div class="pagination-buttons">
+              <button><i class="fas fa-chevron-left"></i></button>
+              <button><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-      <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
-      <p>Desenvolvido com ❤️ para GitHub Pages</p>
+      <div class="container">
+        <p>&copy; 2025 DSMovie. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
