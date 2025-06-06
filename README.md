@@ -1,4 +1,4 @@
-Coleção de Agentes de IA Básicos 🤖
+Coleção de Agentes de IA 🤖
 Bem-vindo ao repositório "Coleção de Agentes de IA Básicos"! Este projeto é um compilado de implementações simples de agentes de Inteligência Artificial, criados a partir de diversos recursos de aprendizado. O principal objetivo aqui foi explorar diferentes abordagens e técnicas apresentadas por tutores em bootcamps, vídeos do YouTube e semanas de programação.
 
 meche.mit.edu
@@ -84,27 +84,6 @@ Anaconda Prompt: Ambiente de linha de comando utilizado para gerenciar ambientes
 www.vecteezy.com
 Créditos e Recursos de Aprendizado 🎓
 Um agradecimento especial a todos os tutores e criadores de conteúdo que tornaram este aprendizado possível! Sua paixão por ensinar e a clareza de suas explicações foram fundamentais.
-
-www.vectorstock.com
-Aqui estão os recursos de aprendizado que foram utilizados para a criação destes agentes. Se você está interessado em aprofundar seus conhecimentos, recomendo fortemente conferir estes materiais:
-
-[Nome do Bootcamp/Canal/Evento/Autor] - [Link para a playlist/curso/vídeo específico, se disponível]
-
-Breve descrição do tipo de agente ou conceito aprendido e como foi aplicado neste projeto.
-
-[Nome do Bootcamp/Canal/Evento/Autor] - [Link para a playlist/curso/vídeo específico, se disponível]
-
-Breve descrição do tipo de agente ou conceito aprendido e como foi aplicado neste projeto.
-
-[Nome do Bootcamp/Canal/Evento/Autor] - [Link para a playlist/curso/vídeo específico, se disponível]
-
-Breve descrição do tipo de agente ou conceito aprendido e como foi aplicado neste projeto.
-
-[Nome do Bootcamp/Canal/Evento/Autor] - [Link para a playlist/curso/vídeo específico, se disponível]
-
-Breve descrição do tipo de agente ou conceito aprendido e como foi aplicado neste projeto.
-
-(Adicione mais itens conforme necessário)
 
 Catálogo de Agentes no GitHub Pages 🌐
 Em breve, este projeto contará com um catálogo interativo de todos os agentes, hospedado no GitHub Pages! Isso facilitará a visualização e o acesso a cada implementação, servindo como uma demonstração mais rica do portfólio. Fique atento às atualizações!
