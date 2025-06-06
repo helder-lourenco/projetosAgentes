@@ -131,20 +131,11 @@ main {
   background-color: #c0392b;
 }
 
-#loading-message,
-#error-message {
+.no-projects {
   text-align: center;
   padding: 20px;
   font-size: 1.1em;
   color: var(--primary-color);
-}
-
-#error-message {
-  color: var(--accent-color);
-}
-
-.hidden {
-  display: none;
 }
 
 footer {
