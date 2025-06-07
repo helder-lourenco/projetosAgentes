@@ -1,4 +1,5 @@
 Ferramentas de Post (Gemini Direto) 🚀
+
 Este projeto é uma ferramenta Streamlit que utiliza a API oficial do Google Gemini para gerar posts de redes sociais. Ele foi desenvolvido para auxiliar na criação de conteúdo envolvente, permitindo que você especifique o conteúdo do post, o público-alvo e o tom de voz desejado.
 
 🌟 Funcionalidades
