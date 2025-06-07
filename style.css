@@ -135,10 +135,46 @@ main {
   font-weight: bold;
   text-align: center;
   color: #eee;
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* Adjusted margin to make space for progress bar */
 }
 
+/* --- Progress Bar Styles --- */
+.progress-container {
+  width: 90%; /* Adjust as needed */
+  background-color: #555; /* Darker background for the empty part of the bar */
+  border-radius: 5px;
+  margin: 10px auto; /* Centers the progress bar */
+  height: 20px;
+  position: relative; /* Needed for absolute positioning of value */
+  overflow: hidden; /* Ensures the inner bar stays within rounded corners */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50; /* Green color for the bar */
+  border-radius: 5px; /* Match container border-radius */
+  text-align: center;
+  color: white;
+  transition: width 0.5s ease-in-out; /* Smooth transition for progress changes */
+  position: absolute; /* Allows for the value to be overlaid */
+  left: 0;
+  top: 0;
+}
+
+.progress-value {
+  position: absolute;
+  width: 100%; /* Occupy full width of container */
+  text-align: center;
+  line-height: 20px; /* Vertically center text in 20px height */
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #eee; /* Color of the progress value text */
+  z-index: 1; /* Ensure text is above the progress bar */
+}
+/* --- End Progress Bar Styles --- */
+
 .item-card .rating {
+  /* This section might not be needed if you're not using ratings */
   padding: 5px 10px;
   text-align: center;
   color: #ffc107; /* Gold color for stars */
@@ -147,6 +183,7 @@ main {
 }
 
 .item-card .rating i {
+  /* This section might not be needed if you're not using ratings */
   margin: 0 2px;
 }
 
@@ -162,6 +199,7 @@ main {
   cursor: pointer;
   border-radius: 0 0 8px 8px;
   transition: background-color 0.2s ease;
+  margin-top: auto; /* Pushes the button to the bottom of the flex container */
 }
 
 .item-card .rate-button:hover {
