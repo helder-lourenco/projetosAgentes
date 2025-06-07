@@ -1,22 +1,87 @@
-# 🤖 Gerador de Agenda de Discussão de IA para Empresas
+📊 Gerador de Agenda de Discussão sobre IA
+🤖 Visão Geral
+Este projeto automatiza a criação de agendas profissionais para discussões sobre Inteligência Artificial e Inovação, com:
 
-Este projeto é um gerador de agenda de discussão de IA para empresas, utilizando agentes autônomos para buscar notícias relevantes e planejar conteúdo relacionado a inovações e avanços em Inteligência Artificial para segmentos de negócio específicos ou para o mercado em geral.
+Busca inteligente de tópicos relevantes
 
-## 🚀 Como Funciona
+Organização automática em categorias lógicas
 
-O sistema é composto por agentes inteligentes que interagem para cumprir a tarefa principal:
+Formatação pronta para e-mails corporativos
 
-1.  **Agente Buscador de Notícias (`agente_buscador_noticias`):** Pesquisa as 5 notícias mais relevantes sobre inovação e IA, com base em um segmento de negócio escolhido (ou notícias gerais se 'Todos' for selecionado). Ele utiliza a ferramenta Google Search para encontrar fontes confiáveis e com alto impacto.
+Sugestões de pontos para discussão
 
-2.  **Agente Planejador de Conteúdo (`agente_planejador`):** Com base nas notícias coletadas pelo Agente Buscador, este agente gera um plano detalhado para postagens em redes sociais ou blog. Cada plano inclui título, público-alvo, objetivo, pontos de discussão, chamada para ação (CTA), hashtags e formato sugerido.
+✨ Funcionalidades Principais
+Geração de Conteúdo:
 
-## 🛠️ Requisitos e Configuração
+Identifica as principais tendências em IA
 
-Para rodar este projeto, você precisará ter o Python instalado e seguir os passos abaixo:
+Destaca casos de sucesso e lições aprendidas
 
-### 1. Clonar o Repositório
+Sugere tópicos estratégicos para debate
 
-```bash
-git clone <URL_DO_SEU_REPOSITORIO>
-cd <nome_do_seu_repositorio>
-```
+Formatação Automática:
+
+Estrutura visual profissional com emojis
+
+Hierarquia clara de informações
+
+Layout otimizado para e-mails corporativos
+
+Personalização:
+
+Adaptação por segmento de negócio
+
+Periodicidade configurável
+
+Envio direto para destinatários
+
+⚙️ Configuração Necessária
+Variáveis de Ambiente (.env):
+
+text
+GEMINI_API_KEY=sua_chave_da_api_gemini
+EMAIL_HOST=servidor.smtp.com
+EMAIL_PORT=587
+EMAIL_USERNAME=seu_email@empresa.com
+EMAIL_PASSWORD=sua_senha
+Dependências:
+
+Python 3.8+
+
+Biblioteca google-generativeai
+
+Streamlit para interface web
+
+🎯 Casos de Uso Típicos
+Comitês de Inovação: Preparação de pautas para reuniões regulares
+
+Gestores de TI: Discussão de adoção de novas tecnologias
+
+Equipes de Transformação Digital: Planejamento de iniciativas estratégicas
+
+📌 Exemplo de Saída
+E-mails estruturados com:
+
+text
+
+## 📌 Sugestão de Pauta
+
+### 1️⃣ Ferramentas Emergentes
+
+🔹 [Ferramenta] - [Descrição]
+_Ponto para discussão: [Questão relevante]_
+
+### 2️⃣ Desafios Principais
+
+🔸 [Desafio] - [Descrição]
+_Ponto para discussão: [Questão para debate]_
+...
+📅 Manutenção e Evolução
+Atualizações automáticas dos tópicos via API Gemini
+
+Adaptável a novos segmentos de negócio
+
+Formatação consistentemente profissional
+
+📜 Licença
+Disponibilizado para uso corporativo interno. Consulte os termos completos no repositório.

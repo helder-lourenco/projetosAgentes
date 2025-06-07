@@ -9,14 +9,21 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "AGENTE DE IA POSTS",
       imageUrl: "./assets/posts.png",
       githubLink:
-        "https://github.com/SeuNomeDeUsuarioGitHub/seurepositorio/tree/main/projetos/liga-da-justica", // LINK DO SEU PROJETO/PASTA
+        "https://github.com/helder-lourenco/projetosAgentes/blob/main/projetos/Agente%20de%20ia%20posts/README.md", // LINK DO SEU PROJETO/PASTA
     },
 
     {
       name: "AGENTE NOTICIAS SOBRE IA",
       imageUrl: "./assets/noticias.jpg",
       githubLink:
-        "https://github.com/SeuNomeDeUsuarioGitHub/seurepositorio/tree/main/projetos/liga-da-justica", // LINK DO SEU PROJETO/PASTA
+        "https://github.com/helder-lourenco/projetosAgentes/blob/main/projetos/Agenda%20FALAR%20de%20IA/README.md", // LINK DO SEU PROJETO/PASTA
+    },
+
+    {
+      name: "APP DE GESTÃO DE PROJETOS COM IA",
+      imageUrl: "./assets/projeto.jpg",
+      githubLink:
+        "https://github.com/helder-lourenco/AI_ProjectFlow-main/blob/main/README.md", // LINK DO SEU PROJETO/PASTA
     },
   ];
 
