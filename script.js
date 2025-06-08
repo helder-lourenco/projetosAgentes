@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     {
+      name: "IA AUDIO TRANSLATOR ING/PT-BR",
+      // Este projeto é um tradutor de texto que utiliza IA para traduzir entre diferentes idiomas.
+      imageUrl: "./assets/tradutor.png",
+      githubLink:
+        "https://github.com/helder-lourenco/projetosAgentes/blob/main/projetos/Agenda%20FALAR%20de%20IA/README.md", // LINK DO SEU PROJETO/PASTA
+      progress: 100, // Exemplo de progresso (entre 0 e 100)
+    },
+
+    {
       name: "APP DE GESTÃO DE PROJETOS COM IA",
       imageUrl: "./assets/projeto.jpg",
       githubLink:

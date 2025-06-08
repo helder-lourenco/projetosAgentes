@@ -213,3 +213,29 @@ footer {
   padding: 1.5rem 0;
   border-top: 1px solid #383e47;
 }
+
+/* style.css */
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 30px; /* Adds some space below the text */
+  padding: 20px;
+  background-color: #444242; /* Light background for the section */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text h3 {
+  color: #039ac0;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  color: #fffdfd;
+  font-size: 1em;
+  margin-top: 10px;
+  line-height: 1.6;
+  max-width: 1000px; /* Limits the width of the text for readability */
+  margin: 0 auto; /* Centers the text block */
+}
