@@ -32,6 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     {
+      name: "ANALISE DE VENDAS COM IA",
+      imageUrl: "./assets/realtori_vendas.jpg",
+      githubLink:
+        "https://github.com/helder-lourenco/projetosAgentes/blob/main/projetos/Agente%20Tradutor%20de%20%C3%A1udio%20com%20IA/README.MD", // LINK DO SEU PROJETO/PASTA
+      progress: 100, // Exemplo de progresso (entre 0 e 100)
+    },
+
+    {
       name: "APP DE GESTÃO DE PROJETOS COM IA",
       imageUrl: "./assets/projeto.jpg",
       githubLink:

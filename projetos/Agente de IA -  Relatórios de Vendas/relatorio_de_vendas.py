@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 # Configurar a chave da API Gemini
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-pro') # Instanciar o modelo Gemini
+model = genai.GenerativeModel('gemini-2.0-flash') # Instanciar o modelo Gemini
 
 st.set_page_config(page_title="Relatório de Vendas", page_icon=":bar_chart:")
 
