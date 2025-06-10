@@ -81,6 +81,7 @@ main {
   align-items: center;
   padding: 10px 0;
   color: #ccc;
+  margin-top: 25px;
 }
 
 .pagination-buttons button {
@@ -99,43 +100,59 @@ main {
   border-color: #fff;
 }
 
+/* GRID CONTAINER STYLES */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  ); /* Adjust minmax as needed */
-  gap: 20px;
-  padding: 20px 0;
+  /* Define 4 colunas, com cada uma preenchendo o espaço disponível */
+  grid-template-columns: repeat(4, 1fr);
+  /* Garante que os itens se alinhem ao topo de suas células. Removendo auto-fill/rows aqui para evitar conflitos */
+  grid-auto-rows: minmax(
+    280px,
+    auto
+  ); /* Altura mínima para o card, com altura automática */
+  gap: 50px 20px; /* Espaçamento entre os cards */
+  padding: 20px 0; /* Espaçamento interno */
+  justify-content: center; /* Centraliza os itens na grade */
+  align-items: start; /* Alinha os itens ao topo */
 }
 
+/* ITEM CARD STYLES */
 .item-card {
-  background-color: #21252b;
+  background-color: #2a2a2a; /* Cor de fundo do card, ajustado para um tom mais escuro */
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
+  height: 100%; /* Garante que o card preencha a célula do grid */
+  position: relative; /* Para posicionamento do pseudo-elemento */
 }
 
 .item-card:hover {
   transform: scale(1.02);
 }
-
 .item-card img {
   width: 100%;
-  height: auto;
+  height: 120px; /* Define uma altura fixa para as imagens */
   display: block;
+  border-radius: 4px;
+  margin-bottom: 0px;
 }
 
 .item-card h3 {
   padding: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: bold;
   text-align: center;
   color: #eee;
   margin-bottom: 5px; /* Adjusted margin to make space for progress bar */
+  flex-grow: 1; /* Permite que o título ocupe o espaço necessário */
+  display: flex; /* Para centralizar o texto verticalmente se houver uma linha */
+  align-items: center; /* Centraliza verticalmente o texto do título */
+  justify-content: center; /* Centraliza horizontalmente o texto do título */
+  min-height: 2.4em; /* Garante altura mínima para títulos de 2 linhas */
 }
 
 /* --- Progress Bar Styles --- */
@@ -143,7 +160,7 @@ main {
   width: 90%; /* Adjust as needed */
   background-color: #555; /* Darker background for the empty part of the bar */
   border-radius: 5px;
-  margin: 10px auto; /* Centers the progress bar */
+  margin: 0px 10px 10px 10px; /* Centers the progress bar */
   height: 20px;
   position: relative; /* Needed for absolute positioning of value */
   overflow: hidden; /* Ensures the inner bar stays within rounded corners */
@@ -159,12 +176,17 @@ main {
   position: absolute; /* Allows for the value to be overlaid */
   left: 0;
   top: 0;
+  line-height: 10px; /* Centraliza o texto verticalmente */
+  transition: width 0.5s ease-in-out; /* Animação suave */
 }
 
 .progress-value {
   position: absolute;
   width: 100%; /* Occupy full width of container */
   text-align: center;
+  top: 0;
+  left: 0;
+  height: 100%; /* Full height of the progress bar */
   line-height: 20px; /* Vertically center text in 20px height */
   font-size: 0.8em;
   font-weight: bold;
@@ -199,7 +221,7 @@ main {
   cursor: pointer;
   border-radius: 0 0 8px 8px;
   transition: background-color 0.2s ease;
-  margin-top: auto; /* Pushes the button to the bottom of the flex container */
+  margin-top: 12px; /* Pushes the button to the bottom of the flex container */
 }
 
 .item-card .rate-button:hover {
