@@ -1,0 +1,15 @@
+Django
+djangorestframework # Para APIs se necessário
+psycopg2-binary     # Conector PostgreSQL para Django
+python-dotenv
+google-generativeai
+email-validator
+requests
+plotly
+pandas
+asyncio
+aiohttp # Para requisições assíncronas no backend, se o rpa_manager for assíncrono
+supabase   
+gunicorn
+uvicorn
+fastapi     # SDK Python para Supabase

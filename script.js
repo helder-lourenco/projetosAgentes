@@ -34,13 +34,24 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "APP DE GESTÃO DE PROJETOS COM IA",
       imageUrl: "./assets/projeto.jpg",
-      githubLink:
-        "https://github.com/helder-lourenco/AI_ProjectFlow-main/blob/main/README.md", // LINK DO SEU PROJETO/PASTA
+      githubLink: "https://github.com/helder-lourenco/", // LINK DO SEU PROJETO/PASTA
       progress: 40, // Exemplo de progresso (entre 0 e 100)
     },
     // Adicione mais 19 projetos fictícios para ter 24 no total na primeira página
     {
-      name: "EM CONSTRUÇÂO", // "AGENTE DE CRM INTELIGENTE",
+      name: "ORQUESTRADOR DE PROCESSOS IA", // "AGENTE DE CRM INTELIGENTE",
+      imageUrl: "./assets/Emconstrucao.png",
+      githubLink: "https://github.com/helder-lourenco",
+      progress: 0,
+    },
+    {
+      name: "AGENTE DE ATENDIMENTO AO CLIENTE - WhatsAPP AI Attendant ",
+      imageUrl: "./assets/Emconstrucao.png",
+      githubLink: "https://github.com/helder-lourenco",
+      progress: 0,
+    },
+    {
+      name: "AUXILIAR NUTRICIONAL", // "AGENTE DE CRM INTELIGENTE",
       imageUrl: "./assets/Emconstrucao.png",
       githubLink: "https://github.com/helder-lourenco",
       progress: 0,

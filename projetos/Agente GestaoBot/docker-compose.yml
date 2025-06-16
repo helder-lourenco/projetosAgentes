@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  orchestrator:
+    build: . # Constrói a imagem a partir do Dockerfile no diretório atual
+    ports:
+      - "8000:8000" # Mapeia a porta 8000 do host para a porta 8000 do contêiner
+    volumes:
+      # Monta o diretório do projeto no contêiner para facilitar o desenvolvimento
+      # Quaisquer mudanças no código local serão refletidas no contêiner
+      - .:/app
+    env_file:
+      - .env # Carrega as variáveis de ambiente do arquivo .env
+    # Não há mais dependências de banco de dados local, pois usaremos Supabase
